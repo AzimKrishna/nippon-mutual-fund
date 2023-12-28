@@ -9,10 +9,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 .wrapper2{
     padding-top: 70px;
     padding-bottom: 70px;
 }
+/* css start for career page */
+
 .banner-box{
     background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)), url("../img/bg-hero-main.png");
     background-position: center; /* Center the image */
@@ -96,7 +99,11 @@ html {
     font-weight: 400;
     line-height: normal;
     border: none;
+    cursor: pointer;
     align-self: flex-start;
+}
+.alternating-section .text-holder button:hover{
+    background: #c20020;
 }
 .alternating-section .pic-part{
     position: relative;
@@ -286,3 +293,213 @@ html {
     }
 }
 
+/* css end for career page */
+
+
+
+/* css for job page */
+
+.hero-box{
+    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.035)), url("../img/bg-hero-job-search.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.hero-box .hero-holder .hero-text{
+    padding: 104px 0 104px 16px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hero-box .hero-holder .hero-text h1{
+    color: #FFF;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hero-box .hero-holder .hero-text h1 span{
+    color: #FFF;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.hero-box .hero-holder .search-box{
+    width: 752px;
+    min-height: 80px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(4px); 
+    padding: 20px 0;
+}
+.hero-box .hero-holder .search-box .search-field-holder select{
+    border-radius: 2px;
+    background: #FFF;
+    display: inline-flex;
+    padding: 8px 8px 8px 8px;
+    align-items: center;
+    gap: 75px;
+    padding-right: 75px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.hero-box .hero-holder .search-box .search-field-holder button{
+    display: inline-flex;
+    padding: 10px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #E00025;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #FFF;
+}
+.hero-box .hero-holder .search-box .search-field-holder button:hover{
+    background: #c20020;
+}
+.hero-box .hero-holder .search-box .search-field-holder{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 14px;
+}
+
+
+.results .heading-holder{
+    padding-left: 54px;
+}
+.results .heading-holder h4{
+    color: #383838;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.results .results-holder table{
+    width: 100%;
+}
+.results .results-holder table thead tr td{
+    text-transform: uppercase;
+    padding: 7px 0;
+    color: #383838;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.results .results-holder table thead{
+    border-bottom: 1px solid #CCC;;
+}
+.results .results-holder table tr td:nth-child(1){
+    padding-left: 54px;
+}
+.results .results-holder table tbody tr{
+    padding: 6px 0;
+}
+.results .results-holder table tbody tr td{
+    color: #616161;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 6px 0;
+}
+.results .filter-holder{
+    border-top: 1px solid #CCC;;
+    color: #626262;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 32px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+
+@media (max-width: 576px){
+    .hero-box .hero-holder .hero-text{
+        padding: 50px 0;
+        color: #FFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .hero-box .hero-holder .hero-text h1{
+        font-size: 32px;    }
+    .hero-box .hero-holder .hero-text h1 span{
+        font-size: 32px;    }
+    .results .heading-holder{
+        padding-left: 0px;
+    }
+    .results .results-holder table thead tr td{
+        padding: 7px 8px;
+    }
+    .results .results-holder table tbody tr td{
+        padding: 7px 8px;
+    }
+    .results .results-holder table tr td:nth-child(1){
+        padding-left: 0px;
+    }
+    .results .filter-holder{
+        padding: 8px 0;
+        margin-top: 6px;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px){
+    .hero-box .hero-holder .hero-text{
+        padding: 60px 0;
+        color: #FFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .hero-box .hero-holder .hero-text h1{
+        font-size: 32px;    }
+    .hero-box .hero-holder .hero-text h1 span{
+        font-size: 32px;    }
+    .results .heading-holder{
+        padding-left: 0px;
+    }
+    .results .results-holder table thead tr td{
+        padding: 7px 8px;
+    }
+    .results .results-holder table tbody tr td{
+        padding: 7px 8px;
+    }
+    .results .results-holder table tr td:nth-child(1){
+        padding-left: 0px;
+    }
+    .results .filter-holder{
+        padding: 8px 0;
+        margin-top: 6px;
+    }
+}    
+
+@media (min-width: 768px) and (max-width: 991px){
+    .results .results-holder table thead tr td{
+        padding: 7px 8px;
+    }
+    .results .results-holder table tbody tr td{
+        padding: 7px 8px;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .results .results-holder table thead tr td{
+        padding: 7px 8px;
+    }
+    .results .results-holder table tbody tr td{
+        padding: 7px 8px;
+    }
+}
+@media (min-width: 1200px) {
+
+}
+
+
+/* css end for job page  */
